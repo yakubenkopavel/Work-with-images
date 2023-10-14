@@ -1,8 +1,6 @@
 package bsu.Study.color;
 
 import java.awt.image.BufferedImage;
-import java.nio.Buffer;
-import java.nio.file.Paths;
 
 public class Transformation {
     public static int min = Integer.MAX_VALUE;

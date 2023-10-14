@@ -1,8 +1,5 @@
 package bsu.Study.rotate;
 
-import java.awt.*;
-import java.awt.geom.AffineTransform;
-import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
 import java.text.ParseException;
 
@@ -29,8 +26,6 @@ public class RotateImage {
         rads = Math.toRadians(theta);
         sin = Math.sin(rads);
         cos = Math.cos(rads);
-        //w = (int) Math.floor(image.getWidth() * Math.abs(cos) + image.getHeight() * Math.abs(sin));
-        //h = (int) Math.floor(image.getHeight() * Math.abs(cos) + image.getWidth() * Math.abs(sin));
         w = image.getWidth();
         h = image.getHeight();
         rotatedImage = new BufferedImage(w, h, image.getType());
@@ -44,9 +39,7 @@ public class RotateImage {
     };
 
     public BufferedImage actionRotate(){
-        //translate(w / 2, h / 2);
         rotate(rads, sin, cos);
-        //translate(-image.getWidth() / 2, -image.getHeight() / 2);
 
         try{
             rotateImage();

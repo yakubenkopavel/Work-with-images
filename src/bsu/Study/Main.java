@@ -14,7 +14,7 @@ public class Main {
     }
 
     private static void startActionColor(){
-        BufferedImage bufferedImage = ReadingFile.read("src/cat.jpg", "jpg");
+        BufferedImage bufferedImage = ReadingFile.read("src/Resources/cat.jpg", "jpg");
         OutputImage.output(bufferedImage);
 
         Gradient gradient = new Gradient(bufferedImage);
