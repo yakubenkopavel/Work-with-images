@@ -10,7 +10,11 @@ import java.awt.image.BufferedImage;
 public class Main {
 
     public static void main(String[] args) {
-        BufferedImage bufferedImage = ReadingFile.read("src/frog.jpg", "jpg");
+        startActionColor();
+    }
+
+    private static void startActionColor(){
+        BufferedImage bufferedImage = ReadingFile.read("src/cat.jpg", "jpg");
         OutputImage.output(bufferedImage);
 
         Gradient gradient = new Gradient(bufferedImage);
@@ -24,7 +28,6 @@ public class Main {
 
         Transformation.getWithoutMin(imageSum);
         OutputImage.output(imageSum);
-
     }
 
 }
